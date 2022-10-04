@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PARCIAL_01[BIBLIOTECA]/1.0.0": {
+        "runtime": {
+          "PARCIAL_01[BIBLIOTECA].dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PARCIAL_01[BIBLIOTECA]/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
