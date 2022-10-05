@@ -270,6 +270,21 @@ namespace PARCIAL_01_BIBLIOTECA_
 
             return validacion;
         }
+        public override bool Equals(object obj)
+        {
+            bool validacion = false;
+
+            if (obj is Viaje)
+            {
+                validacion = (this == ((Viaje)obj));
+            }
+            return validacion;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
         /// <summary>
         /// Sobre escritura del metodo [ToString] retornando el nombre del crucero de determinado viaje
         /// </summary>

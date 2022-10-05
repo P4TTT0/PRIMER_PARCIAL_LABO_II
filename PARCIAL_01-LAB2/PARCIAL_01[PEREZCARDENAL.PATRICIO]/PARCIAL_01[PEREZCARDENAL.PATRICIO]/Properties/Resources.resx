@@ -148,17 +148,20 @@
   <data name="GRAFICO_ESTADISTICAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GRAFICO_ESTADISTICAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MANCHA_DECORACION2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MANCHA_DECORACION2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EXCLAMACION_INFORMACION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EXCLAMACION_INFORMACION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MANCHA_DECORACION1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MANCHA_DECORACION1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LINEA_MINIMIZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LINEA_MINIMIZAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AGENDA_VISUALIZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AGENDA_VISUALIZAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LINEA_MINIMIZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LINEA_MINIMIZAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MANCHA_DECORACION1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MANCHA_DECORACION1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MANCHA_DECORACION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MANCHA_DECORACION.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,7 +169,7 @@
   <data name="AGENDA_VISUALIZAR_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AGENDA_VISUALIZAR_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MANCHA_DECORACION2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MANCHA_DECORACION2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FOTO PERFIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOTO PERFIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

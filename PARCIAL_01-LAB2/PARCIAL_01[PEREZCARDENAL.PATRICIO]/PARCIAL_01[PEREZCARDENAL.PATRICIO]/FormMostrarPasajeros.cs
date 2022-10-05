@@ -107,10 +107,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             if (this.auxPasajero is not null)
             {
                 FormInfoDetalladaPasajero formInfoPasajero = new FormInfoDetalladaPasajero(this.auxPasajero);
-                if (formInfoPasajero.ShowDialog() == DialogResult.OK)
-                {
-
-                }
+                formInfoPasajero.ShowDialog();
             }
         }
 

@@ -627,7 +627,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.labelPrecioFinal);
             this.MinimumSize = new System.Drawing.Size(802, 488);
             this.Name = "FormVenderPasaje";
-            this.Text = "FormVenderPasaje";
+            this.Text = "VENDER PASAJE";
             this.Load += new System.EventHandler(this.FormVenderPasaje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureMancha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

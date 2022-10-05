@@ -65,7 +65,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             // 
             // pictureFotoPerfil
             // 
-            this.pictureFotoPerfil.Image = global::PARCIAL_01_PEREZCARDENAL.PATRICIO_.Properties.Resources.FOTOPERFIL_P4TTT0;
+            this.pictureFotoPerfil.Image = global::PARCIAL_01_PEREZCARDENAL.PATRICIO_.Properties.Resources.FOTO_PERFIL;
             this.pictureFotoPerfil.Location = new System.Drawing.Point(44, 129);
             this.pictureFotoPerfil.Margin = new System.Windows.Forms.Padding(35, 120, 3, 3);
             this.pictureFotoPerfil.Name = "pictureFotoPerfil";

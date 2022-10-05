@@ -63,6 +63,11 @@ namespace PARCIAL_01_BIBLIOTECA_
             return !(pasajero == dni);
         }
 
+        public override string Mostrar()
+        {
+            return base.Mostrar() + this.esPremium;
+        }
+
         public override bool Equals(object obj)
         {
             bool validacion = false;

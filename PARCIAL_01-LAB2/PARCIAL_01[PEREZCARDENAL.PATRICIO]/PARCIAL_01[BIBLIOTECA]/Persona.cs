@@ -26,6 +26,11 @@ namespace PARCIAL_01_BIBLIOTECA_
             this.genero = genero;
         }
 
+        public virtual string Mostrar()
+        {
+            return this.nombre + " " + this.apellido;
+        }
+
 
        
     }

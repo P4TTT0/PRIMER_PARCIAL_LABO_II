@@ -191,7 +191,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(310, 50);
             this.btnLogin.TabIndex = 8;
-            this.btnLogin.Text = "Iniciar sesion";
+            this.btnLogin.Text = "Iniciar sesión";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -238,7 +238,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Name = "FormLogin";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "LOGIN";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineaUsuario)).EndInit();

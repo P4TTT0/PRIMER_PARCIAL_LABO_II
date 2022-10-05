@@ -203,7 +203,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.MinimumSize = new System.Drawing.Size(1168, 593);
             this.Name = "FormMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMenuPrincipal";
+            this.Text = "MENU PRINCIPAL";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMenuPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.panelBeSideIzquierdo.ResumeLayout(false);

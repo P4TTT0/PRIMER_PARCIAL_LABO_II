@@ -428,7 +428,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.labelDestino);
             this.MinimumSize = new System.Drawing.Size(1101, 680);
             this.Name = "FormMostrarInformarcion";
-            this.Text = "FormMostrarInformarcion";
+            this.Text = "INFORMACION VIAJE";
             this.Load += new System.EventHandler(this.FormMostrarInformarcion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureMancha)).EndInit();
             this.ResumeLayout(false);

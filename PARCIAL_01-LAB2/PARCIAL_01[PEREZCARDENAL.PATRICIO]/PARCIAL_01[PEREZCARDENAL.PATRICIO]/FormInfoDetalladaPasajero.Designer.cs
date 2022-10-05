@@ -324,7 +324,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.labelNombre);
             this.MinimumSize = new System.Drawing.Size(878, 591);
             this.Name = "FormInfoDetalladaPasajero";
-            this.Text = "FormInfoDetalladaPasajero";
+            this.Text = "INFORMACION DETALLADA PASAJERO";
             this.Load += new System.EventHandler(this.FormInfoDetalladaPasajero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

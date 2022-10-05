@@ -239,7 +239,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.MaximumSize = new System.Drawing.Size(562, 485);
             this.MinimumSize = new System.Drawing.Size(365, 439);
             this.Name = "FormCrearViaje";
-            this.Text = "FormCrearViaje";
+            this.Text = "CREAR VIAJE";
             this.Load += new System.EventHandler(this.FormCrearViaje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureMancha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSimboloError)).EndInit();

@@ -99,7 +99,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.labelBienvenido);
             this.Controls.Add(this.dataGridLeaderboardCrucero);
             this.Name = "FormLeaderboardCrucero";
-            this.Text = "FormLeaderboardCrucero";
+            this.Text = "LEADERBOARD CRUCERO";
             this.Load += new System.EventHandler(this.FormLeaderboardCrucero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLeaderboardCrucero)).EndInit();
             this.ResumeLayout(false);
