@@ -30,6 +30,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelValorPrecioFinal.Text = $"{viaje.ValorFinalPremium:c}";
             this.AñadirCantidadEquipaje(2);
             this.checkPremium.Checked = true;
+            this.btnTipoPasaje.Text = "PREMIUM";
         }
     }
 }

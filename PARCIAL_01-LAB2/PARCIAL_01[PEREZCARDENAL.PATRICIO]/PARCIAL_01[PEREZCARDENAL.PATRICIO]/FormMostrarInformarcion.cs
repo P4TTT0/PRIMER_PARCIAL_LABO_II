@@ -29,6 +29,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
 
         private void ActualizarViaje()
         {
+            this.viajes[this.contador].CalcularDisponibilidadPasajes();
             this.labelInfoDestino.Text = this.viajes[this.contador].Destino;
             this.labelCantidadCamarotesPremium.Text = this.viajes[this.contador].CamarotesPremium.ToString();
             this.labelCantidadCamarotesTurista.Text = this.viajes[this.contador].CamarotesTurista.ToString();
@@ -36,6 +37,8 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelValorPrecioTurista.Text = $"{this.viajes[this.contador].ValorTurista:c}";
             this.labelHorasDuracion.Text = $"{this.viajes[this.contador].DuracionViaje.ToString()}" + " HS."; 
             this.labelMaxCantidadPasajeros.Text = this.viajes[this.contador].MaxCantidadPasajeros.ToString();
+            this.labelCantidadPasajesLibres.Text = $"{this.viajes[this.contador].DisponibilidadPasajes}";
+            this.labelCapacidadBodegaValor.Text = $"{this.viajes[this.contador].Crucero.Bodega}" + " KG.";
             this.labelInfoFechaInicio.Text = $"{this.viajes[this.contador].FechaInicioViaje:d}";
             this.labelInfoFechaFinal.Text = $"{this.viajes[this.contador].FechaFinalViaje:d}";
             this.ActualizarEstadoViaje();

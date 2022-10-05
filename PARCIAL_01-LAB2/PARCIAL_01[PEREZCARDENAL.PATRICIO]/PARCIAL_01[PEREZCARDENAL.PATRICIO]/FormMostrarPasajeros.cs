@@ -79,10 +79,10 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
 
             foreach (Viaje viaje in BaseDatos.viajes)
             {
+                viajeSeleccionado++;
                 if (indice > -1)
-                {
-                    viajeSeleccionado++;
-                    if (viaje == this.dataGridViajes.Rows[indice].Cells[3].Value.ToString() && viaje.FechaInicioViaje == DateTime.Parse(this.dataGridViajes.Rows[indice].Cells[0].Value.ToString()))
+                {              
+                    if (viaje.ToString() == this.dataGridViajes.Rows[indice].Cells[3].Value.ToString() && DateTime.Parse($"{viaje.FechaInicioViaje:d}") == DateTime.Parse(this.dataGridViajes.Rows[indice].Cells[0].Value.ToString()))
                     {
                         foreach (Pasajero pasajero in viaje.Pasajeros)
                         {

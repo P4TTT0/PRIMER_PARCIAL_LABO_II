@@ -60,7 +60,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         {
             this.ActualizarErrorCamposVacios(0);
             this.ActualizarErrorDniCargado(0);
-            this.ActualizarErrorPasaporteCargado(0);
             this.CargarGeneros();
             this.CargarNacionalidades();
         }
@@ -111,20 +110,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             {
                 this.pictureErrorDniCargado.Visible = false;
                 this.labelErrorDniCargado.Visible = false;
-            }
-        }
-
-        private void ActualizarErrorPasaporteCargado(int opcion)
-        {
-            if (opcion == 1)
-            {
-                this.pictureErrorPasaporteCargado.Visible = true;
-                this.labelErrorPasaporteCargado.Visible = true;
-            }
-            else
-            {
-                this.pictureErrorPasaporteCargado.Visible = false;
-                this.labelErrorPasaporteCargado.Visible = false;
             }
         }
 

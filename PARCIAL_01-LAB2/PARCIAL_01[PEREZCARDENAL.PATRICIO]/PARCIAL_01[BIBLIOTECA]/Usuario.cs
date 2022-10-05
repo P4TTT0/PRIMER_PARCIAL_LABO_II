@@ -13,7 +13,12 @@ namespace PARCIAL_01_BIBLIOTECA_
             this.usuario = usuario;
             this.contraseña = contraseña;
         }
-
+        /// <summary>
+        /// Comprueba si el USUARIO y la CONTRASEÑA de dos usuarios son iguales
+        /// </summary>
+        /// <param name="usuarioUno"></param>
+        /// <param name="usuarioDos"></param>
+        /// <returns>[TRUE] Si el USUARIO y la CONTRASEÑA de ambos usuarios son iguales [FALSE] Si el USUARIO y la CONTRASEÑA de ambos usuarios son distintos o si alguno de los usuarios es [NULL]</returns>
         public static bool operator ==(Usuario usuarioUno, Usuario usuarioDos)
         {
             bool validacion = false;

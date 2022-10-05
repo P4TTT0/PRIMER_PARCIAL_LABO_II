@@ -29,38 +29,23 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelDestinoPopular = new System.Windows.Forms.Label();
-            this.labelDestinoPopularValor = new System.Windows.Forms.Label();
             this.labelGananciaRegional = new System.Windows.Forms.Label();
             this.labelGananciaExtraRegional = new System.Windows.Forms.Label();
             this.labelGananciaRegionalValor = new System.Windows.Forms.Label();
             this.labelGananciaExtraRegionalValor = new System.Windows.Forms.Label();
             this.btnMostrarLeaderboardCrucero = new System.Windows.Forms.Button();
             this.btnMostrarPasajerosFrecuentes = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureGananciaRegional = new System.Windows.Forms.PictureBox();
+            this.pictureGananciaExtraRegional = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelValorPorcentualRegional = new System.Windows.Forms.Label();
+            this.labelValorPorcentualExtraregional = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGananciaRegional)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGananciaExtraRegional)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelDestinoPopular
-            // 
-            this.labelDestinoPopular.AutoSize = true;
-            this.labelDestinoPopular.Font = new System.Drawing.Font("Trueno", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDestinoPopular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
-            this.labelDestinoPopular.Location = new System.Drawing.Point(12, 9);
-            this.labelDestinoPopular.Name = "labelDestinoPopular";
-            this.labelDestinoPopular.Size = new System.Drawing.Size(392, 44);
-            this.labelDestinoPopular.TabIndex = 0;
-            this.labelDestinoPopular.Text = "DESTINO POPULAR:";
-            // 
-            // labelDestinoPopularValor
-            // 
-            this.labelDestinoPopularValor.AutoSize = true;
-            this.labelDestinoPopularValor.Font = new System.Drawing.Font("Trueno", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDestinoPopularValor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelDestinoPopularValor.Location = new System.Drawing.Point(410, 9);
-            this.labelDestinoPopularValor.Name = "labelDestinoPopularValor";
-            this.labelDestinoPopularValor.Size = new System.Drawing.Size(165, 42);
-            this.labelDestinoPopularValor.TabIndex = 1;
-            this.labelDestinoPopularValor.Text = "Destino.";
             // 
             // labelGananciaRegional
             // 
@@ -118,7 +103,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.btnMostrarLeaderboardCrucero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarLeaderboardCrucero.Font = new System.Drawing.Font("Trueno", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMostrarLeaderboardCrucero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btnMostrarLeaderboardCrucero.Location = new System.Drawing.Point(841, 165);
+            this.btnMostrarLeaderboardCrucero.Location = new System.Drawing.Point(841, 88);
             this.btnMostrarLeaderboardCrucero.Name = "btnMostrarLeaderboardCrucero";
             this.btnMostrarLeaderboardCrucero.Size = new System.Drawing.Size(230, 70);
             this.btnMostrarLeaderboardCrucero.TabIndex = 6;
@@ -134,7 +119,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.btnMostrarPasajerosFrecuentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarPasajerosFrecuentes.Font = new System.Drawing.Font("Trueno", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMostrarPasajerosFrecuentes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btnMostrarPasajerosFrecuentes.Location = new System.Drawing.Point(841, 89);
+            this.btnMostrarPasajerosFrecuentes.Location = new System.Drawing.Point(841, 12);
             this.btnMostrarPasajerosFrecuentes.Name = "btnMostrarPasajerosFrecuentes";
             this.btnMostrarPasajerosFrecuentes.Size = new System.Drawing.Size(230, 70);
             this.btnMostrarPasajerosFrecuentes.TabIndex = 7;
@@ -142,20 +127,76 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.btnMostrarPasajerosFrecuentes.UseVisualStyleBackColor = false;
             this.btnMostrarPasajerosFrecuentes.Click += new System.EventHandler(this.btnMostrarPasajerosFrecuentes_Click);
             // 
-            // button3
+            // pictureBox1
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Trueno", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.button3.Location = new System.Drawing.Point(841, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 70);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "DESTINOS MAS FACTURADOS";
-            this.button3.UseVisualStyleBackColor = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(10, 437);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureGananciaRegional
+            // 
+            this.pictureGananciaRegional.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureGananciaRegional.Location = new System.Drawing.Point(12, 47);
+            this.pictureGananciaRegional.Name = "pictureGananciaRegional";
+            this.pictureGananciaRegional.Size = new System.Drawing.Size(62, 158);
+            this.pictureGananciaRegional.TabIndex = 10;
+            this.pictureGananciaRegional.TabStop = false;
+            // 
+            // pictureGananciaExtraRegional
+            // 
+            this.pictureGananciaExtraRegional.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureGananciaExtraRegional.Location = new System.Drawing.Point(12, 280);
+            this.pictureGananciaExtraRegional.Name = "pictureGananciaExtraRegional";
+            this.pictureGananciaExtraRegional.Size = new System.Drawing.Size(62, 158);
+            this.pictureGananciaExtraRegional.TabIndex = 11;
+            this.pictureGananciaExtraRegional.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trueno", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
+            this.label2.Location = new System.Drawing.Point(28, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 23);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "EXTRAREGIONAL:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trueno", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
+            this.label1.Location = new System.Drawing.Point(28, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 23);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "REGIONAL:";
+            // 
+            // labelValorPorcentualRegional
+            // 
+            this.labelValorPorcentualRegional.AutoSize = true;
+            this.labelValorPorcentualRegional.Font = new System.Drawing.Font("Trueno", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelValorPorcentualRegional.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
+            this.labelValorPorcentualRegional.Location = new System.Drawing.Point(152, 19);
+            this.labelValorPorcentualRegional.Name = "labelValorPorcentualRegional";
+            this.labelValorPorcentualRegional.Size = new System.Drawing.Size(48, 25);
+            this.labelValorPorcentualRegional.TabIndex = 15;
+            this.labelValorPorcentualRegional.Text = "0%";
+            // 
+            // labelValorPorcentualExtraregional
+            // 
+            this.labelValorPorcentualExtraregional.AutoSize = true;
+            this.labelValorPorcentualExtraregional.Font = new System.Drawing.Font("Trueno", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelValorPorcentualExtraregional.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
+            this.labelValorPorcentualExtraregional.Location = new System.Drawing.Point(220, 252);
+            this.labelValorPorcentualExtraregional.Name = "labelValorPorcentualExtraregional";
+            this.labelValorPorcentualExtraregional.Size = new System.Drawing.Size(48, 25);
+            this.labelValorPorcentualExtraregional.TabIndex = 16;
+            this.labelValorPorcentualExtraregional.Text = "0%";
             // 
             // FormEstadisticas
             // 
@@ -163,34 +204,44 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(1083, 628);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.labelValorPorcentualExtraregional);
+            this.Controls.Add(this.labelValorPorcentualRegional);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureGananciaExtraRegional);
+            this.Controls.Add(this.pictureGananciaRegional);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMostrarPasajerosFrecuentes);
             this.Controls.Add(this.btnMostrarLeaderboardCrucero);
             this.Controls.Add(this.labelGananciaExtraRegionalValor);
             this.Controls.Add(this.labelGananciaRegionalValor);
             this.Controls.Add(this.labelGananciaExtraRegional);
             this.Controls.Add(this.labelGananciaRegional);
-            this.Controls.Add(this.labelDestinoPopularValor);
-            this.Controls.Add(this.labelDestinoPopular);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEstadisticas";
             this.Text = "FormEstadisticas";
             this.Load += new System.EventHandler(this.FormEstadisticas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGananciaRegional)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGananciaExtraRegional)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelDestinoPopular;
-        private System.Windows.Forms.Label labelDestinoPopularValor;
         private System.Windows.Forms.Label labelGananciaRegional;
         private System.Windows.Forms.Label labelGananciaExtraRegional;
         private System.Windows.Forms.Label labelGananciaRegionalValor;
         private System.Windows.Forms.Label labelGananciaExtraRegionalValor;
         private System.Windows.Forms.Button btnMostrarLeaderboardCrucero;
         private System.Windows.Forms.Button btnMostrarPasajerosFrecuentes;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureGananciaRegional;
+        private System.Windows.Forms.PictureBox pictureGananciaExtraRegional;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelValorPorcentualRegional;
+        private System.Windows.Forms.Label labelValorPorcentualExtraregional;
     }
 }

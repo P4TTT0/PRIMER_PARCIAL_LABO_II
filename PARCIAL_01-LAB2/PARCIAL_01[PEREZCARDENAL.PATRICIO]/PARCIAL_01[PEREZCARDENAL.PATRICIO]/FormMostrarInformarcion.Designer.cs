@@ -38,7 +38,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelPrecioTurista = new System.Windows.Forms.Label();
             this.labelDuracion = new System.Windows.Forms.Label();
             this.labelMaxPasajeros = new System.Windows.Forms.Label();
-            this.labelPasajesOcupados = new System.Windows.Forms.Label();
             this.labelPasajesLibres = new System.Windows.Forms.Label();
             this.pictureMancha = new System.Windows.Forms.PictureBox();
             this.labelCantidadCamarotesPremium = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelValorPrecioTurista = new System.Windows.Forms.Label();
             this.labelHorasDuracion = new System.Windows.Forms.Label();
             this.labelMaxCantidadPasajeros = new System.Windows.Forms.Label();
-            this.labelCantidadPasajesOcupados = new System.Windows.Forms.Label();
             this.labelCantidadPasajesLibres = new System.Windows.Forms.Label();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -56,6 +54,8 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelFechaFinal = new System.Windows.Forms.Label();
             this.labelInfoFechaInicio = new System.Windows.Forms.Label();
             this.labelInfoFechaFinal = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelCapacidadBodegaValor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMancha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,24 +172,12 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelMaxPasajeros.TabIndex = 8;
             this.labelMaxPasajeros.Text = "Cantidad maxima pasajeros:";
             // 
-            // labelPasajesOcupados
-            // 
-            this.labelPasajesOcupados.AutoSize = true;
-            this.labelPasajesOcupados.Font = new System.Drawing.Font("Trueno", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPasajesOcupados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelPasajesOcupados.Location = new System.Drawing.Point(39, 421);
-            this.labelPasajesOcupados.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
-            this.labelPasajesOcupados.Name = "labelPasajesOcupados";
-            this.labelPasajesOcupados.Size = new System.Drawing.Size(282, 35);
-            this.labelPasajesOcupados.TabIndex = 9;
-            this.labelPasajesOcupados.Text = "Pasajes ocupados:";
-            // 
             // labelPasajesLibres
             // 
             this.labelPasajesLibres.AutoSize = true;
             this.labelPasajesLibres.Font = new System.Drawing.Font("Trueno", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelPasajesLibres.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelPasajesLibres.Location = new System.Drawing.Point(39, 471);
+            this.labelPasajesLibres.Location = new System.Drawing.Point(39, 421);
             this.labelPasajesLibres.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
             this.labelPasajesLibres.Name = "labelPasajesLibres";
             this.labelPasajesLibres.Size = new System.Drawing.Size(221, 35);
@@ -279,24 +267,12 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelMaxCantidadPasajeros.TabIndex = 17;
             this.labelMaxCantidadPasajeros.Text = "0.";
             // 
-            // labelCantidadPasajesOcupados
-            // 
-            this.labelCantidadPasajesOcupados.AutoSize = true;
-            this.labelCantidadPasajesOcupados.Font = new System.Drawing.Font("Trueno", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCantidadPasajesOcupados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelCantidadPasajesOcupados.Location = new System.Drawing.Point(324, 421);
-            this.labelCantidadPasajesOcupados.Margin = new System.Windows.Forms.Padding(0, 15, 3, 0);
-            this.labelCantidadPasajesOcupados.Name = "labelCantidadPasajesOcupados";
-            this.labelCantidadPasajesOcupados.Size = new System.Drawing.Size(42, 35);
-            this.labelCantidadPasajesOcupados.TabIndex = 18;
-            this.labelCantidadPasajesOcupados.Text = "0.";
-            // 
             // labelCantidadPasajesLibres
             // 
             this.labelCantidadPasajesLibres.AutoSize = true;
             this.labelCantidadPasajesLibres.Font = new System.Drawing.Font("Trueno", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelCantidadPasajesLibres.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelCantidadPasajesLibres.Location = new System.Drawing.Point(263, 471);
+            this.labelCantidadPasajesLibres.Location = new System.Drawing.Point(263, 421);
             this.labelCantidadPasajesLibres.Margin = new System.Windows.Forms.Padding(0, 15, 3, 0);
             this.labelCantidadPasajesLibres.Name = "labelCantidadPasajesLibres";
             this.labelCantidadPasajesLibres.Size = new System.Drawing.Size(42, 35);
@@ -393,12 +369,38 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelInfoFechaFinal.TabIndex = 26;
             this.labelInfoFechaFinal.Text = "Fecha.";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trueno", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(39, 471);
+            this.label2.Margin = new System.Windows.Forms.Padding(30, 15, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(296, 35);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Capacidad bodega:";
+            // 
+            // labelCapacidadBodegaValor
+            // 
+            this.labelCapacidadBodegaValor.AutoSize = true;
+            this.labelCapacidadBodegaValor.Font = new System.Drawing.Font("Trueno", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelCapacidadBodegaValor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelCapacidadBodegaValor.Location = new System.Drawing.Point(338, 471);
+            this.labelCapacidadBodegaValor.Margin = new System.Windows.Forms.Padding(0, 15, 3, 0);
+            this.labelCapacidadBodegaValor.Name = "labelCapacidadBodegaValor";
+            this.labelCapacidadBodegaValor.Size = new System.Drawing.Size(42, 35);
+            this.labelCapacidadBodegaValor.TabIndex = 28;
+            this.labelCapacidadBodegaValor.Text = "0.";
+            // 
             // FormMostrarInformarcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(1085, 641);
+            this.Controls.Add(this.labelCapacidadBodegaValor);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelInfoFechaFinal);
             this.Controls.Add(this.labelInfoFechaInicio);
             this.Controls.Add(this.labelFechaFinal);
@@ -407,7 +409,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.labelCantidadPasajesLibres);
-            this.Controls.Add(this.labelCantidadPasajesOcupados);
             this.Controls.Add(this.labelMaxCantidadPasajeros);
             this.Controls.Add(this.labelHorasDuracion);
             this.Controls.Add(this.labelValorPrecioTurista);
@@ -416,7 +417,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.labelCantidadCamarotesPremium);
             this.Controls.Add(this.pictureMancha);
             this.Controls.Add(this.labelPasajesLibres);
-            this.Controls.Add(this.labelPasajesOcupados);
             this.Controls.Add(this.labelMaxPasajeros);
             this.Controls.Add(this.labelDuracion);
             this.Controls.Add(this.labelPrecioTurista);
@@ -426,6 +426,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.Controls.Add(this.btnEstadoViaje);
             this.Controls.Add(this.labelInfoDestino);
             this.Controls.Add(this.labelDestino);
+            this.MinimumSize = new System.Drawing.Size(1101, 680);
             this.Name = "FormMostrarInformarcion";
             this.Text = "FormMostrarInformarcion";
             this.Load += new System.EventHandler(this.FormMostrarInformarcion_Load);
@@ -446,7 +447,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         private System.Windows.Forms.Label labelPrecioTurista;
         private System.Windows.Forms.Label labelDuracion;
         private System.Windows.Forms.Label labelMaxPasajeros;
-        private System.Windows.Forms.Label labelPasajesOcupados;
         private System.Windows.Forms.Label labelPasajesLibres;
         private System.Windows.Forms.PictureBox pictureMancha;
         private System.Windows.Forms.Label labelCantidadCamarotesPremium;
@@ -455,7 +455,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         private System.Windows.Forms.Label labelValorPrecioTurista;
         private System.Windows.Forms.Label labelHorasDuracion;
         private System.Windows.Forms.Label labelMaxCantidadPasajeros;
-        private System.Windows.Forms.Label labelCantidadPasajesOcupados;
         private System.Windows.Forms.Label labelCantidadPasajesLibres;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnSiguiente;
@@ -464,5 +463,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         private System.Windows.Forms.Label labelFechaFinal;
         private System.Windows.Forms.Label labelInfoFechaInicio;
         private System.Windows.Forms.Label labelInfoFechaFinal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelCapacidadBodegaValor;
     }
 }

@@ -17,14 +17,13 @@ namespace PARCIAL_01_BIBLIOTECA_
         private int bodega;
         private bool tieneViajeAsignado;
 
-        public Crucero (string matricula, string nombre, int camarotes, int salones, int casinos, int bodega, int piscinas)
+        public Crucero (string matricula, string nombre, int camarotes, int salones, int casinos, int piscinas)
         {
             this.matricula = matricula;
             this.nombre = nombre;
             this.camarotes = camarotes;
             this.salones = salones;
             this.casinos = casinos;
-            this.bodega = bodega;
             this.piscinas = piscinas;
         }
 
@@ -87,6 +86,10 @@ namespace PARCIAL_01_BIBLIOTECA_
             {
                 return this.bodega;
             }
+            set
+            {
+                this.bodega = value;
+            }
         }
 
         public bool TieneViajeAsignado
@@ -100,11 +103,18 @@ namespace PARCIAL_01_BIBLIOTECA_
                 this.tieneViajeAsignado = value;
             }
         }
+        /// <summary>
+        /// Metodo que devuelve el nombre del crucero
+        /// </summary>
+        /// <returns></returns>
         private string Mostrar()
         {
             return this.nombre;
         }
-
+        /// <summary>
+        /// Sobre escritura de [ToString()] que devuelve el metodo MOSTRAR
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.Mostrar();

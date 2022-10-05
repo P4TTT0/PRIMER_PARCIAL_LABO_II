@@ -19,6 +19,7 @@ namespace PARCIAL_01_BIBLIOTECA_
         private float valorFinalTurista;
         private int duracionViaje;
         private List<Pasajero> pasajeros;
+        private int disponibilidadPasajes;
         private int maxCantidadPasajeros;
         private string destino;
         private EstadoViaje estadoViaje;
@@ -37,13 +38,16 @@ namespace PARCIAL_01_BIBLIOTECA_
         public Crucero Crucero { get => crucero; }
         public EstadoViaje EstadoViaje { get => estadoViaje; set => estadoViaje = value; }
         public List<Pasajero> Pasajeros { get => pasajeros; set => pasajeros = value; }
+        public int DisponibilidadPasajes { get => disponibilidadPasajes; }
 
         private Viaje(DateTime fechaInicioViaje, Crucero crucero)
         {
             this.fechaInicioViaje = fechaInicioViaje;
             this.crucero = crucero;
             this.CalcularCantidadCamarotes();
-            this.CalcularCantidadMaximaPasajeros();       
+            this.CalcularCantidadMaximaPasajeros();
+            this.CalcularDisponibilidadPasajes();
+            this.CalcularPesoTotalBodegaAutomatico();
             this.pasajeros = new List<Pasajero>();
         }
 
@@ -68,58 +72,80 @@ namespace PARCIAL_01_BIBLIOTECA_
             this.CalcularFechaDeFinalizacionViaje();
             this.CalcularEstadoViaje();
         }
-
+        /// <summary>
+        /// Metodo que calcula la cantidad de camarotes premium (35%) y la cantidad de camarotes turistas (RESTANTES)
+        /// </summary>
         private void CalcularCantidadCamarotes()
         {
             this.camarotesPremium = (this.crucero * 35) / 100;
             this.camarotesTurista = this.crucero - this.camarotesPremium;
         }
-
+        /// <summary>
+        /// Calcula la duracion en HORAS de un viaje EXTRAREGIONAL utilizando un random entre (480 HORAS y 720 HORAS)
+        /// </summary>
         private void CalcularDuracionViajeExtraRegional()
         {
             Random duracionViaje = new Random();
 
             this.duracionViaje = duracionViaje.Next(480, 721);
         }
-
-        private void CalcularPrecioExtraRegional()
-        {
-            float valorPasaje = this.duracionViaje * 120;
-            this.valorTurista = valorPasaje;
-            this.valorPremium = valorPasaje + ((valorPasaje * 20) / 100);
-        }
-
+        /// <summary>
+        /// Calcula la duracion en HORAS de un viaje REGIONAL utilizando un random entre (72 HORAS y 360 HORAS)
+        /// </summary>
         private void CalcularDuracionViajeRegional()
         {
             Random duracionViaje = new Random();
 
             this.duracionViaje = duracionViaje.Next(72, 361);
         }
-
+        /// <summary>
+        /// Calcula el precio TURISTA y PREMIUM de un viaje EXTRAREGIONAL 
+        /// TURISTA: En base a DURACION * $120
+        /// PREMIUM: En base al valor TURISTA mas un (20%)
+        /// </summary>
+        private void CalcularPrecioExtraRegional()
+        {
+            float valorPasaje = this.duracionViaje * 120;
+            this.valorTurista = valorPasaje;
+            this.valorPremium = valorPasaje + ((valorPasaje * 20) / 100);
+        }
+        /// <summary>
+        /// Calcula el precio TURISTA y PREMIUM de un viaje EXTRAREGIONAL 
+        /// TURISTA: En base a DURACION * $57
+        /// PREMIUM: En base al valor TURISTA mas un (20%)
+        /// </summary>
         private void CalcularPrecioRegional()
         {
             float valorPasaje = this.duracionViaje * 57;
             this.valorTurista = valorPasaje;
             this.valorPremium = valorPasaje + ((valorPasaje * 20) / 100);
         }
-
+        /// <summary>
+        /// Calcula el precio final PREMIUM mediante la suma de su porcentaje IVA (%20)
+        /// </summary>
         private void CalcularPrecioFinalPremium()
         {
             int porcentaje = 21;
             this.valorFinalPremium = this.valorPremium + ((valorPremium * porcentaje) / 100);
         }
-
+        /// <summary>
+        /// Calcula el precio final TURISTA mediante la suma de su porcentaje IVA (%20)
+        /// </summary>
         private void CalcularPrecioFinalTurista()
         {
             int porcentaje = 21;
             this.valorFinalTurista = this.valorTurista + ((valorTurista * porcentaje) / 100);
         }
-
+        /// <summary>
+        /// Calcula la cantidad de pasajeros maximos multiplicando la cantidad de camarotes * 4
+        /// </summary>
         private void CalcularCantidadMaximaPasajeros()
         {
             this.maxCantidadPasajeros = this.crucero * 4;
         }
-
+        /// <summary>
+        /// Calcula la fecha de finalizacion del viaje añadiendole los dias (DURACION EN HORAS / 24 = DIAS) de duracion a la fecha de inicio
+        /// </summary>
         private void CalcularFechaDeFinalizacionViaje()
         {
             int duracionViajeDias;
@@ -127,7 +153,9 @@ namespace PARCIAL_01_BIBLIOTECA_
             duracionViajeDias = this.duracionViaje / 24;
             this.fechaFinalViaje = auxFechaInicioViaje.AddDays(duracionViajeDias);
         }
-
+        /// <summary>
+        /// Calcula el estado del viaje en comparacion a la fecha actual y a la fehca de incio del viaje
+        /// </summary>
         private void CalcularEstadoViaje()
         {
             if (DateTime.Today < this.fechaInicioViaje)
@@ -146,13 +174,42 @@ namespace PARCIAL_01_BIBLIOTECA_
                 }
             } 
         }
+        /// <summary>
+        /// Calcula automaticamente el peso total que tendra el viaje para que el mismo tenga el respectivo peso necesario en relacion a la cantidad de camarotes y a sus posibilidades de peso maxima
+        /// </summary>
+        private void CalcularPesoTotalBodegaAutomatico()
+        {
+            this.crucero.Bodega = (this.camarotesTurista * 25) + (this.camarotesPremium * 50);
+        }
 
+        public void CalcularDisponibilidadPasajes()
+        {
+            if (this.pasajeros is not null)
+            {
+                this.disponibilidadPasajes = this.maxCantidadPasajeros - (this.pasajeros.Count);
+            }
+            else
+            {
+                this.disponibilidadPasajes = this.maxCantidadPasajeros;
+            }
+        }
+        /// <summary>
+        /// Sobrecarga de [+] para poder añadir un pasajero a la lista
+        /// </summary>
+        /// <param name="viaje"></param>
+        /// <param name="pasajero"></param>
+        /// <returns>Retorna el viaje</returns>
         public static Viaje operator +(Viaje viaje, Pasajero pasajero)
         {
             viaje.pasajeros.Add(pasajero);
             return viaje;
         }
-
+        /// <summary>
+        /// Comprueba si un crucero tiene un viaje determinado
+        /// </summary>
+        /// <param name="viaje"></param>
+        /// <param name="crucero"></param>
+        /// <returns>[TRUE] Si el crucero posee el viaje [FALSE] Si el crucero no posee el viaje o si algunos de los dos son [NULL]</returns>
         public static bool operator ==(Viaje viaje, Crucero crucero)
         {
             bool validacion = false;
@@ -164,45 +221,16 @@ namespace PARCIAL_01_BIBLIOTECA_
 
             return validacion;
         }
-
         public static bool operator !=(Viaje viaje, Crucero crucero)
         {
             return !(viaje == crucero);
         }
-        public static bool operator ==(Viaje viajeUno, Viaje viajeDos)
-        {
-            bool validacion = false;
-
-            if (viajeUno is not null && viajeDos is not null)
-            {
-                validacion = (viajeUno == viajeDos.crucero && viajeUno.fechaInicioViaje == viajeDos.fechaInicioViaje);
-            }
-
-            return validacion;
-        }
-
-        public static bool operator !=(Viaje viajeUno, Viaje viajeDos)
-        {
-            return !(viajeUno == viajeDos);
-        }
-
-        public static bool operator ==(Viaje viaje, string crucero)
-        {
-            bool validacion = false;
-
-            if (viaje is not null && crucero is not null)
-            {
-                validacion = (viaje.crucero.Nombre == crucero);
-            }
-
-            return validacion;
-        }
-
-        public static bool operator !=(Viaje viaje, string crucero)
-        {
-            return !(viaje == crucero);
-        }
-
+        /// <summary>
+        /// Comprueba si existe un pasajero en un viaje mediante la relacion de sus DNI
+        /// </summary>
+        /// <param name="viaje"></param>
+        /// <param name="pasajero"></param>
+        /// <returns>[TRUE] Si existe dicho pasajero en el viaje [FALSE] Si no existe dicho pasajero en el viaje o si alguno de los dos es [NULL]</returns>
         public static bool operator ==(Viaje viaje, Pasajero pasajero)
         {
             bool validacion = false;
@@ -222,7 +250,11 @@ namespace PARCIAL_01_BIBLIOTECA_
         {
             return !(viaje == pasajero);
         }
-
+        /// <summary>
+        /// Metodo que comprueba si el destino pasado por parametro es REGIONAL
+        /// </summary>
+        /// <param name="destinoComprobar"></param>
+        /// <returns>[TRUE] Si el destino es regional [FALSE] Si el destino es extraRegional</returns>
         public bool ComprobarDestinoEsRegional(string destinoComprobar)
         {
             bool validacion = false;
@@ -237,6 +269,14 @@ namespace PARCIAL_01_BIBLIOTECA_
             }
 
             return validacion;
+        }
+        /// <summary>
+        /// Sobre escritura del metodo [ToString] retornando el nombre del crucero de determinado viaje
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return this.crucero.Nombre;
         }
     }
 }

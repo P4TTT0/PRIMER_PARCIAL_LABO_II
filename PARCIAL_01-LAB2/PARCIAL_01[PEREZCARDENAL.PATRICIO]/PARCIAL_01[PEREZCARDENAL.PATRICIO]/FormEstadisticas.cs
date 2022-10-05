@@ -20,8 +20,10 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
 
         private void FormEstadisticas_Load(object sender, EventArgs e)
         {
-            this.labelGananciaRegionalValor.Text = $"{BaseDatos.estadisticas.GananciaRegional.ToString():c}";
-            this.labelGananciaExtraRegionalValor.Text = $"{BaseDatos.estadisticas.GananciaExtraRegional.ToString():c}";
+            this.labelGananciaRegionalValor.Text = $"{BaseDatos.estadisticas.GananciaRegional:c}";
+            this.labelGananciaExtraRegionalValor.Text = $"{BaseDatos.estadisticas.GananciaExtraRegional:c}";
+            BaseDatos.estadisticas.CalcularValorPorcentualGanancias();
+            this.ActualizarGraficoGanancias();
         }
 
         private void btnMostrarLeaderboardCrucero_Click(object sender, EventArgs e)
@@ -35,6 +37,14 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         {
             FormLeaderboardPasajeros formLeaderboard = new FormLeaderboardPasajeros();
             formLeaderboard.ShowDialog();
+        }
+
+        private void ActualizarGraficoGanancias()
+        {
+            this.pictureGananciaRegional.Width = (int)(BaseDatos.estadisticas.ValorPorcentualGananciaRegional * 7);
+            this.pictureGananciaExtraRegional.Width = (int)(BaseDatos.estadisticas.ValorPorcentualGananciaExtraRegional * 7);
+            this.labelValorPorcentualRegional.Text = $"{Math.Round(BaseDatos.estadisticas.ValorPorcentualGananciaRegional)}" + "%";
+            this.labelValorPorcentualExtraregional.Text = $"{Math.Round(BaseDatos.estadisticas.ValorPorcentualGananciaExtraRegional)}" + "%";
         }
     }
 }

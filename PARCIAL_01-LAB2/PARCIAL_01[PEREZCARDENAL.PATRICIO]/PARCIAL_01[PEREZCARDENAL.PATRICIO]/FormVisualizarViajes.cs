@@ -45,7 +45,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.labelCantidadPiscinas.Text = BaseDatos.cruceros[this.contador].Piscinas.ToString();
             this.labelCantidadSalones.Text = BaseDatos.cruceros[this.contador].Salones.ToString();
             this.labelCantidadCasinos.Text = BaseDatos.cruceros[this.contador].Casinos.ToString();
-            this.labelPesoBodega.Text = BaseDatos.cruceros[this.contador].Bodega.ToString();
             BaseDatos.cruceros[this.contador].TieneViajeAsignado = BaseDatos.ComprobarViajeEnCrucero(BaseDatos.cruceros[this.contador], out this.viajesEnCrucero);
             this.labelNumeroBarco.Text = (this.contador + 1).ToString();
 

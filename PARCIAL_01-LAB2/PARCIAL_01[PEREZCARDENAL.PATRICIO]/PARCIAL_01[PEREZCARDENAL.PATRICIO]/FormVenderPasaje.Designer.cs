@@ -57,8 +57,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.groupBoxContenedor = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.numericPesoEquipaje = new System.Windows.Forms.NumericUpDown();
-            this.labelErrorPasaporteCargado = new System.Windows.Forms.Label();
-            this.pictureErrorPasaporteCargado = new System.Windows.Forms.PictureBox();
             this.labelErrorDniCargado = new System.Windows.Forms.Label();
             this.pictureErrorDniCargado = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,6 +68,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.pictureErrorCamposVacios = new System.Windows.Forms.PictureBox();
             this.labelErrorCamposVacios = new System.Windows.Forms.Label();
             this.checkPremium = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMancha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -82,7 +81,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBoxContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericPesoEquipaje)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureErrorPasaporteCargado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureErrorDniCargado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -395,8 +393,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.groupBoxContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBoxContenedor.Controls.Add(this.label4);
             this.groupBoxContenedor.Controls.Add(this.numericPesoEquipaje);
-            this.groupBoxContenedor.Controls.Add(this.labelErrorPasaporteCargado);
-            this.groupBoxContenedor.Controls.Add(this.pictureErrorPasaporteCargado);
             this.groupBoxContenedor.Controls.Add(this.labelErrorDniCargado);
             this.groupBoxContenedor.Controls.Add(this.pictureErrorDniCargado);
             this.groupBoxContenedor.Controls.Add(this.label3);
@@ -466,30 +462,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             0,
             0,
             0});
-            // 
-            // labelErrorPasaporteCargado
-            // 
-            this.labelErrorPasaporteCargado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelErrorPasaporteCargado.AutoSize = true;
-            this.labelErrorPasaporteCargado.Font = new System.Drawing.Font("Trueno", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelErrorPasaporteCargado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(32)))), ((int)(((byte)(44)))));
-            this.labelErrorPasaporteCargado.Location = new System.Drawing.Point(39, 289);
-            this.labelErrorPasaporteCargado.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
-            this.labelErrorPasaporteCargado.Name = "labelErrorPasaporteCargado";
-            this.labelErrorPasaporteCargado.Size = new System.Drawing.Size(199, 18);
-            this.labelErrorPasaporteCargado.TabIndex = 33;
-            this.labelErrorPasaporteCargado.Text = "¡PASAPORTE Ya cargado!";
-            // 
-            // pictureErrorPasaporteCargado
-            // 
-            this.pictureErrorPasaporteCargado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureErrorPasaporteCargado.Image = global::PARCIAL_01_PEREZCARDENAL.PATRICIO_.Properties.Resources.EXCLAMACION_ERROR;
-            this.pictureErrorPasaporteCargado.Location = new System.Drawing.Point(15, 289);
-            this.pictureErrorPasaporteCargado.Name = "pictureErrorPasaporteCargado";
-            this.pictureErrorPasaporteCargado.Size = new System.Drawing.Size(18, 18);
-            this.pictureErrorPasaporteCargado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureErrorPasaporteCargado.TabIndex = 34;
-            this.pictureErrorPasaporteCargado.TabStop = false;
             // 
             // labelErrorDniCargado
             // 
@@ -621,12 +593,26 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.checkPremium.Text = "Premium";
             this.checkPremium.UseVisualStyleBackColor = false;
             // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trueno", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(123)))), ((int)(((byte)(175)))));
+            this.label5.Location = new System.Drawing.Point(547, 264);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 0, 3, 2);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 14);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "(+21% IVA)";
+            // 
             // FormVenderPasaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(786, 449);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.checkPremium);
             this.Controls.Add(this.labelErrorCamposVacios);
             this.Controls.Add(this.pictureErrorCamposVacios);
@@ -656,7 +642,6 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             this.groupBoxContenedor.ResumeLayout(false);
             this.groupBoxContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericPesoEquipaje)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureErrorPasaporteCargado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureErrorDniCargado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -702,12 +687,11 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelErrorPasaporteCargado;
-        private System.Windows.Forms.PictureBox pictureErrorPasaporteCargado;
         private System.Windows.Forms.Label labelErrorDniCargado;
         private System.Windows.Forms.PictureBox pictureErrorDniCargado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericPesoEquipaje;
         protected System.Windows.Forms.CheckBox checkPremium;
+        private System.Windows.Forms.Label label5;
     }
 }

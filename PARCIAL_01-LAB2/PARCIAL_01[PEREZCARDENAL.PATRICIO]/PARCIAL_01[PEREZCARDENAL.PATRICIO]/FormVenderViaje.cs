@@ -24,8 +24,10 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
 
         private void ActualizarViaje()
         {
+            this.viajes[this.contador].CalcularDisponibilidadPasajes();
             this.labelNombreCrucero.Text = this.viajes[this.contador].Crucero.Nombre;
             this.labelInfoDestino.Text = this.viajes[this.contador].Destino;
+            this.labelCantidadDisponibilidad.Text = $"{this.viajes[this.contador].DisponibilidadPasajes}";
             this.labelCantidadPiscina.Text = this.viajes[this.contador].Crucero.Piscinas.ToString();
             this.labelCantidadCasino.Text = this.viajes[this.contador].Crucero.Casinos.ToString();
             this.ActualizarCasinos();
@@ -208,17 +210,18 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
             FormVenderPasajePremium formVender = new FormVenderPasajePremium(this.viajes[this.contador]);
             if (formVender.ShowDialog() == DialogResult.OK)
             {
-                if (!Pasaporte.ValidarDni(formVender.Dni, this.viajes[this.contador]))
+               if (!Pasaporte.ValidarDni(formVender.Dni, this.viajes[this.contador]))
                 {
                     this.viajes[this.contador] += formVender.AuxPasajero;
                     if (this.viajes[this.contador].ComprobarDestinoEsRegional(this.viajes[this.contador].Destino))
                     {
-                        BaseDatos.ActualizarGananciaRegional(this.viajes[this.contador].ValorFinalPremium);
+                        BaseDatos.ActualizarGananciaRegional(this.viajes[this.contador].ValorFinalTurista);
                     }
                     else
                     {
-                        BaseDatos.ActualizarGananciaExtraRegional(this.viajes[this.contador].ValorFinalPremium);
+                        BaseDatos.ActualizarGananciaExtraRegional(this.viajes[this.contador].ValorFinalTurista);
                     }
+                    this.ActualizarViaje();
                     MessageBox.Show("¡Cargado correctamente!", "Pasajero cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -244,13 +247,13 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
                     {
                         BaseDatos.ActualizarGananciaExtraRegional(this.viajes[this.contador].ValorFinalTurista);
                     }
+                    this.ActualizarViaje();
                     MessageBox.Show("¡Cargado correctamente!", "Pasajero cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
                     MessageBox.Show("¡No se pudo cargar el pasajero ya que ya se encuentra en este viaje!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj": {}
+    "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj": {
+    "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj",
+        "projectUniqueName": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj",
         "projectName": "PARCIAL_01[BIBLIOTECA]",
-        "projectPath": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj",
+        "projectPath": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\obj\\",
+        "outputPath": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj": {
+    "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj",
+        "projectUniqueName": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj",
         "projectName": "PARCIAL_01[PEREZCARDENAL.PATRICIO]",
-        "projectPath": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj",
+        "projectPath": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO].csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\obj\\",
+        "outputPath": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj": {
-                "projectPath": "D:\\OneDrive\\Escritorio\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj"
+              "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj": {
+                "projectPath": "D:\\OneDrive\\Escritorio\\PARCIAL\\PARCIAL_01-LAB2\\PARCIAL_01[PEREZCARDENAL.PATRICIO]\\PARCIAL_01[BIBLIOTECA]\\PARCIAL_01[BIBLIOTECA].csproj"
               }
             }
           }

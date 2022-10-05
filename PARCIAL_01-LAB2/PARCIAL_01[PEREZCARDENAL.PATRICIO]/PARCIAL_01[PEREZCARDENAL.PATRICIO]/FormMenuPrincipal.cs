@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PARCIAL_01_BIBLIOTECA_;
 
 namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
 {
@@ -51,6 +52,7 @@ namespace PARCIAL_01_PEREZCARDENAL.PATRICIO_
         private void FormMenuPrincipal_Load(object sender, EventArgs e)
         {
             this.AbrirFormInterno(new FormInternoBienvenido());
+            BaseDatos.RecogerGananciasHistoricas();
         }
 
         private void btnVender_Click(object sender, EventArgs e)
