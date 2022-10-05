@@ -13,7 +13,7 @@ Mi nombre es Perez Cardenal Patricio, tengo 18 años y me encuentro finalizando 
     - **INFO:** Aqui se desplegara una lista de todos los viajes, los mismos podran ser seleccionados para desplegar otra lista sus pasajeros asignados. En la parte inferior derecha tendremos un boton que nos permitira visualizar la informacion a detalle del pasajero que seleccionemos.
     - **STATS:** Por ultimo, en esta opcion veremos estadisticas historicas, un grafico porcentual de ganancias, las ganacias totales dependiendo de tipo de destino y dos botones que nos llevan a dos diferentes listados historicos.
 ## []- DIAGRAMA DE CLASES.
-
+![DIAGRAMA DE CLASES](https://user-images.githubusercontent.com/98591487/193988381-e9b53b9b-5e50-48c0-9a5e-712c42fb3d72.png)
 ## []- JUSTIFICACION TECNICA.
 - Tema 01
 Englobando todos los conceptos, el lenguaje c# fue quien me permitio dar todas las instrucciones a la mencionada aplicacion, realizando todo el apartado logico del programa.
